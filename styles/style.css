@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -34,7 +35,7 @@ body{
 .wrapper i{
     cursor: pointer;
 }
-.top-bar, .progress-area .timer, .speed, .controls, .music-list .header, .music-list li{
+.top-bar, .progress-area .timer, .speed, .controls, .tool-bar .header,  li{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,14 +56,16 @@ body{
     margin:auto;
     margin-top: 30px;
     overflow: hidden;
-    background-color: var(--lightGray);
+    /* background-color: var(--lightGray); */
+    background-color: rgba(54, 43, 41, 0.1);
     border-radius: 100%;
-    justify-content: space-between;
 }
 .img-area img{
-    width: 100%;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
+    position: relative;
+    transform: translate(17%,17%);
 }
 .song-details{
     text-align: center;
@@ -72,6 +75,17 @@ body{
 }
 .song-details .name{
     font-size: 18px;
+}
+.tool-bar {
+    text-align: left;
+    color: black;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.tool-bar span {
+    margin-left: 10px;
+    height: 22px;
 }
 .progress-area{
     width: 100%;
@@ -106,9 +120,6 @@ body{
 .progress-area .timer{
     margin-top: 4px;
 }
-.progress-speed{
-    margin-bottom: 8px;
-}
 .progress-speed span{
     font-size: 16px;
     color: var(--white);
@@ -121,7 +132,7 @@ body{
     margin: 40px 0 5px 0;
 }
 .controls i{
-    font-size: 28px;
+    font-size: 50px;
     user-select: none;
     background: var(--white);
     background-clip: text;
@@ -132,10 +143,10 @@ body{
     font-size: 43px;
 }
 .controls #prev{
-    margin-right: 12px;
+    margin-left: 60px;
 }
 .controls #next{
-    margin-left: 12px;
+    margin-right: 60px;
 }
 .controls .play-pause{
     width: 54px;

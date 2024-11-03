@@ -1,7 +1,8 @@
 let allMusic = [
     {
-        name: "音乐窗",
-        img:  "../images/音乐窗.png",
-        src:  "音乐窗"
+        name: "dd",
+        artist: "张杰",
+        img: "images/音乐窗.png",
+        src: "songs/dd.mp3",
     },
 ]
